@@ -2,8 +2,8 @@
   <PropertyGroup>
     <MSBuildForUnityVersion>0.8.3</MSBuildForUnityVersion>
     
-    <MSBuildForUnityGeneratedOutputDirectory>C:\Users\KITCHIND\Documents\GitHub\MicrosoftHoloLens\Microsoft HoloLens\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
-    <UnityProjectAssetsPath>C:\Users\KITCHIND\Documents\GitHub\MicrosoftHoloLens\Microsoft HoloLens\Assets</UnityProjectAssetsPath>
+    <MSBuildForUnityGeneratedOutputDirectory>M:\Libraries\Documents\GitHub\MicrosoftHoloLens\Microsoft HoloLens\MSBuild\Projects</MSBuildForUnityGeneratedOutputDirectory>
+    <UnityProjectAssetsPath>M:\Libraries\Documents\GitHub\MicrosoftHoloLens\Microsoft HoloLens\Assets</UnityProjectAssetsPath>
     <MSBuildForUnityDefaultOutputPath>$(UnityProjectAssetsPath)\Dependencies</MSBuildForUnityDefaultOutputPath>
     
     <UnityCurrentPlatform>WSA</UnityCurrentPlatform>
