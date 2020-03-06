@@ -1,0 +1,34 @@
+pool:
+  name: Default
+  demands:
+  - msbuild
+  - visualstudio
+
+steps:
+- task: davesmits.hololens-unity-build.custom-build-task-1.Unity Build Task@2
+  displayName: 'Build HoloListen Unity Project'
+  inputs:
+    unityFolder: 'MicrosoftHoloLens/ Microsoft HoloLens'
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+
+- task: VSBuild@1
+  displayName: 'Build solution **\*.sln'
+  inputs:
+    msbuildArgs: '/p:AppxPackageDir="$(Build.ArtifactStagingDirectory)\AppxPackages\\"   /p:UapAppxPackageBuildMode=StoreUpload  /p:AppxBundle=Always'
+    platform: x86
+
+- task: ArchiveFiles@2
+  displayName: 'Archive $(Build.ArtifactStagingDirectory)\AppxPackages'
+  inputs:
+    rootFolderOrFile: '$(Build.ArtifactStagingDirectory)\AppxPackages'
+
+- task: CopyFilesOverSSH@0
+  displayName: 'Securely copy files to the remote machine'
+  inputs:
+    sshEndpoint: Cube
+    sourceFolder: '$(Build.ArtifactStagingDirectory)'
+    contents: '$(Build.BuildId).zip'
+    targetFolder: 'webspace/HoloListen-Builds'
+
