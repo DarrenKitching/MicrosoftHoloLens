@@ -1,5 +1,0 @@
-sceneSetups:
-- path: Assets/MixedRealityToolkit.Examples/Demos/HandTracking/Scenes/HandInteractionTouchablesExample.unity
-  isLoaded: 1
-  isActive: 1
-  isSubScene: 0
