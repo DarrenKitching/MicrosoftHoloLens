@@ -25,17 +25,17 @@ public class ChangePos : MonoBehaviour
         {
             print("Coords of last piece are " + lastTouch.transform.position);
             Vector3 temp = gameObject.transform.position;
-            temp.x += (float) 0.35;
-            temp.y += 1;
-            temp.z += (float) 4.2;
+            temp.x -= (float) 2.6;
+            temp.y += (float) 1.024;
+            temp.z += (float) 4.255;
             lastTouch.transform.position = temp;
             print("New coords of last touch " + lastTouch.transform.position);
         }
         else
         {
             print("null");
-            lastTouch = gameObject;
-            print("Set last touch to " + lastTouch.name);
+            lastTouch = gameObject.transform.parent.gameObject;
+            print("Set last touch to " + gameObject.name);
         }
     }
 }

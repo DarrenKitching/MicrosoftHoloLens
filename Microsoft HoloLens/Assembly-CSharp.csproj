@@ -725,6 +725,10 @@
       <Project>{4E55ACB0-1E1B-D934-C34E-A1F45F9B9107}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Demos.Gltf.Inspectors</Name>
     </ProjectReference>
+    <ProjectReference Include="Microsoft.Windows.MixedReality.DotNetWinRT.Editor.csproj">
+      <Project>{4B58A981-5D15-7192-3EED-DE199ADB1662}</Project>
+      <Name>Microsoft.Windows.MixedReality.DotNetWinRT.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Demos.Gltf.csproj">
       <Project>{CE63724E-963D-32C9-18C7-02846D8E8847}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Demos.Gltf</Name>
@@ -836,10 +840,6 @@
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.csproj">
       <Project>{51F43BB2-D57A-E7B7-C9ED-C3207D996E91}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Services.InputSimulation</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.Windows.MixedReality.DotNetWinRT.Editor.csproj">
-      <Project>{4B58A981-5D15-7192-3EED-DE199ADB1662}</Project>
-      <Name>Microsoft.Windows.MixedReality.DotNetWinRT.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
