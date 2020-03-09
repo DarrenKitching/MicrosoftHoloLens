@@ -21,7 +21,7 @@ public class ChangePos : MonoBehaviour
     public void Change() 
     {
         print("Hello");
-        if (lastTouch != null)
+        if (lastTouch != null && gameObject.name.Length == 2)
         {
             print("Coords of last piece are " + lastTouch.transform.position);
             Vector3 temp = gameObject.transform.position;
@@ -30,12 +30,16 @@ public class ChangePos : MonoBehaviour
             temp.z += (float) 4.255;
             lastTouch.transform.position = temp;
             print("New coords of last touch " + lastTouch.transform.position);
+            lastTouch = null;
         }
         else
         {
             print("null");
-            lastTouch = gameObject.transform.parent.gameObject;
-            print("Set last touch to " + gameObject.name);
+            if(gameObject.name.Length == 3) 
+            { 
+                lastTouch = gameObject.transform.parent.gameObject;
+                print("Set last touch to " + gameObject.name);
+            }
         }
     }
 }

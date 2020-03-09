@@ -305,9 +305,6 @@
     <Reference Include="Microsoft.MixedReality.Toolkit.Demos.Gltf.Inspectors">
       <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Demos.Gltf.Inspectors.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT.Editor">
-      <HintPath>Library/ScriptAssemblies/Microsoft.Windows.MixedReality.DotNetWinRT.Editor.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.Editor.ClassExtensions">
       <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Editor.ClassExtensions.dll</HintPath>
     </Reference>
@@ -367,6 +364,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT.Editor">
+      <HintPath>Library/ScriptAssemblies/Microsoft.Windows.MixedReality.DotNetWinRT.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT">
       <HintPath>Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
