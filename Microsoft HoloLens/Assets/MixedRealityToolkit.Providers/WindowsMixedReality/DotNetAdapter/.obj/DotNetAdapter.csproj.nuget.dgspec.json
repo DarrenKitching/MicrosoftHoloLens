@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "M:\\Libraries\\Documents\\GitHub\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj": {}
+    "C:\\Users\\kitch\\Documents\\Git Projects\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj": {}
   },
   "projects": {
-    "M:\\Libraries\\Documents\\GitHub\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj": {
+    "C:\\Users\\kitch\\Documents\\Git Projects\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "M:\\Libraries\\Documents\\GitHub\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
+        "projectUniqueName": "C:\\Users\\kitch\\Documents\\Git Projects\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
         "projectName": "DotNetAdapter",
-        "projectPath": "M:\\Libraries\\Documents\\GitHub\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
-        "packagesPath": "C:\\Users\\comad\\.nuget\\packages\\",
-        "outputPath": "M:\\Libraries\\Documents\\GitHub\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\.obj\\",
+        "projectPath": "C:\\Users\\kitch\\Documents\\Git Projects\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\DotNetAdapter.csproj",
+        "packagesPath": "C:\\Users\\kitch\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kitch\\Documents\\Git Projects\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\.obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "M:\\Libraries\\Documents\\GitHub\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\NuGet.Config",
-          "C:\\Users\\comad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kitch\\Documents\\Git Projects\\MicrosoftHoloLens\\Microsoft HoloLens\\Assets\\MixedRealityToolkit.Providers\\WindowsMixedReality\\DotNetAdapter\\NuGet.Config",
+          "C:\\Users\\kitch\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
