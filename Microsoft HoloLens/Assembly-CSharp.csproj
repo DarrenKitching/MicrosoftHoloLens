@@ -125,40 +125,40 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="MSBuildForUnity">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/MSBuildForUnity.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/MSBuildForUnity.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.WindowsMR.Editor">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.XR.WindowsMR.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.XR.WindowsMR">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/Unity.XR.WindowsMR.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -332,10 +332,10 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/System.Drawing.Primitives.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT">
-      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/InEditor/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
+      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/InEditor/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -725,6 +725,10 @@
       <Project>{4E55ACB0-1E1B-D934-C34E-A1F45F9B9107}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Demos.Gltf.Inspectors</Name>
     </ProjectReference>
+    <ProjectReference Include="Microsoft.Windows.MixedReality.DotNetWinRT.Editor.csproj">
+      <Project>{4B58A981-5D15-7192-3EED-DE199ADB1662}</Project>
+      <Name>Microsoft.Windows.MixedReality.DotNetWinRT.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Demos.Gltf.csproj">
       <Project>{CE63724E-963D-32C9-18C7-02846D8E8847}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Demos.Gltf</Name>
@@ -836,10 +840,6 @@
     <ProjectReference Include="Microsoft.MixedReality.Toolkit.Services.InputSimulation.csproj">
       <Project>{51F43BB2-D57A-E7B7-C9ED-C3207D996E91}</Project>
       <Name>Microsoft.MixedReality.Toolkit.Services.InputSimulation</Name>
-    </ProjectReference>
-    <ProjectReference Include="Microsoft.Windows.MixedReality.DotNetWinRT.Editor.csproj">
-      <Project>{4B58A981-5D15-7192-3EED-DE199ADB1662}</Project>
-      <Name>Microsoft.Windows.MixedReality.DotNetWinRT.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
