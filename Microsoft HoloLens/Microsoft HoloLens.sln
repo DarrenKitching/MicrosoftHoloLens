@@ -75,8 +75,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.MixedReality.Tool
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.MixedReality.Toolkit.Services.InputSystem.Editor", "Microsoft.MixedReality.Toolkit.Services.InputSystem.Editor.csproj", "{B30CAD37-52CF-7B1E-6E96-56CFDD2FF7CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Windows.MixedReality.DotNetWinRT.Editor", "Microsoft.Windows.MixedReality.DotNetWinRT.Editor.csproj", "{4B58A981-5D15-7192-3EED-DE199ADB1662}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityEngine.TestRunner.Player", "UnityEngine.TestRunner.Player.csproj", "{1A07A8E2-5EDE-E4EF-802A-AD0DA0AE7FDC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.MixedReality.Toolkit.SDK.Player", "Microsoft.MixedReality.Toolkit.SDK.Player.csproj", "{FA40D93A-B4D6-5DA4-B3F9-AC0806F81B6E}"
@@ -277,10 +275,6 @@ Global
 		{B30CAD37-52CF-7B1E-6E96-56CFDD2FF7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B30CAD37-52CF-7B1E-6E96-56CFDD2FF7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B30CAD37-52CF-7B1E-6E96-56CFDD2FF7CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{4B58A981-5D15-7192-3EED-DE199ADB1662}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4B58A981-5D15-7192-3EED-DE199ADB1662}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4B58A981-5D15-7192-3EED-DE199ADB1662}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{4B58A981-5D15-7192-3EED-DE199ADB1662}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1A07A8E2-5EDE-E4EF-802A-AD0DA0AE7FDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1A07A8E2-5EDE-E4EF-802A-AD0DA0AE7FDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1A07A8E2-5EDE-E4EF-802A-AD0DA0AE7FDC}.Release|Any CPU.ActiveCfg = Release|Any CPU

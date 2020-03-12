@@ -67,10 +67,10 @@
     <Compile Include="Assets\MixedRealityToolkit.Services\BoundarySystem\MixedRealityBoundarySystem.cs" />
     <None Include="Assets\MixedRealityToolkit.Services\BoundarySystem\Microsoft.MixedReality.Toolkit.Services.BoundarySystem.asmdef" />
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -259,10 +259,10 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="System.Drawing.Primitives">
-      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/System.Drawing.Primitives.dll</HintPath>
+      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/System.Drawing.Primitives.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT">
-      <HintPath>C:/Users/KITCHIND/Desktop/Microsoft HoloLens/Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/InEditor/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
+      <HintPath>C:/Users/kitch/Documents/Git Projects/MicrosoftHoloLens/Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/InEditor/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.19f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
