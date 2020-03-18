@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\ChangePos.cs" />
      <Compile Include="Assets\Scripts\ChessBoard.cs" />
+     <Compile Include="Assets\Scripts\ChessBoard1.cs" />
      <Compile Include="Assets\Scripts\ChessPiece.cs" />
      <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
      <Compile Include="Assets\Scripts\Pieces\Bishop.cs" />
@@ -66,6 +67,7 @@
      <Compile Include="Assets\Scripts\Pieces\Queen.cs" />
      <Compile Include="Assets\Scripts\Pieces\Rook.cs" />
      <Compile Include="Assets\Scripts\Restart.cs" />
+     <Compile Include="Assets\Scripts\Tile.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
