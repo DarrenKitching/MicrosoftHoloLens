@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD:Tower of Hanoi/Assets/MixedRealityToolkit/Extensions/EditorClassExtensions/Microsoft.MixedReality.Toolkit.Editor.ClassExtensions.asmdef
     "name": "Microsoft.MixedReality.Toolkit.Editor.ClassExtensions",
+=======
+    "name": "Microsoft.Windows.MixedReality.DotNetWinRT.Editor",
+>>>>>>> ac8072c891c364067eeae1e0b101a278b355e200:Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/Microsoft.Windows.MixedReality.DotNetWinRT/Editor/Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
     "references": [],
     "optionalUnityReferences": [],
     "includePlatforms": [
@@ -10,5 +14,10 @@
     "overrideReferences": false,
     "precompiledReferences": [],
     "autoReferenced": true,
+<<<<<<< HEAD:Tower of Hanoi/Assets/MixedRealityToolkit/Extensions/EditorClassExtensions/Microsoft.MixedReality.Toolkit.Editor.ClassExtensions.asmdef
     "defineConstraints": []
+=======
+    "defineConstraints": [],
+    "versionDefines": []
+>>>>>>> ac8072c891c364067eeae1e0b101a278b355e200:Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/Microsoft.Windows.MixedReality.DotNetWinRT/Editor/Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef
 }
