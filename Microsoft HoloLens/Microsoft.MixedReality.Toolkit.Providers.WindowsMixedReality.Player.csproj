@@ -1127,6 +1127,7 @@
     <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\BaseWindowsMixedRealitySource.cs" />
     <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\Definitions\HolographicDepthReprojectionMethod.cs" />
     <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\Definitions\HolographicFrameNativeData.cs" />
+    <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\DotNetAdapter\Plugins\net46\Microsoft.Windows.MixedReality.DotNetWinRT\Editor\Microsoft.Windows.MixedReality.DotNetWinRT.Init.cs" />
     <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\Extensions\GestureRecognizerExtensions.cs" />
     <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\Extensions\InteractionSourceExtensions.cs" />
     <Compile Include="Assets\MixedRealityToolkit.Providers\WindowsMixedReality\WindowsMixedRealityArticulatedHand.cs" />

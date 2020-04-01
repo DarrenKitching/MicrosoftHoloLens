@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Tower of Hanoi/Assets/MixedRealityToolkit.Providers/ObjectMeshObserver/Microsoft.MixedReality.Toolkit.Providers.ObjectMeshObserver.asmdef.meta
 guid: 13ac6bcd081d93e4ab5fbdf0f69054d1
-=======
-guid: a86c479391ab3184d971a7205a037fd9
->>>>>>> ac8072c891c364067eeae1e0b101a278b355e200:Microsoft HoloLens/Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/Microsoft.Windows.MixedReality.DotNetWinRT/Editor/Microsoft.Windows.MixedReality.DotNetWinRT.Editor.asmdef.meta
 AssemblyDefinitionImporter:
   externalObjects: {}
   userData: 
