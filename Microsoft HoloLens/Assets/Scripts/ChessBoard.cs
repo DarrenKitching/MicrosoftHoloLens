@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 
 public class ChessBoard : MonoBehaviour
 {
     public static ChessBoard Instance { set; get; }
     private bool[,] allowedMoves { set; get; }
-
+    
     public Material[] materials;
     Renderer rend;
 
@@ -19,6 +20,12 @@ public class ChessBoard : MonoBehaviour
     public int selectionX = -1;
     public int selectionY = -1;
 
+    int HalfmoveClock = 0;
+    int FullMoveCounter = 1;
+
+    public bool justEnPassant = false;
+    public Tile enPassantTargetSquare = null;
+
     public bool isWhiteTurn = true;
 
     public ChessPiece SelectedChessPiece;
@@ -29,11 +36,12 @@ public class ChessBoard : MonoBehaviour
         initializeTileArray();
         initializePieces();
         Instance = this;
+ //       StartCoroutine(get_AI_Move(generate_AI_url()));
     }
 
     public void SelectChessPiece(ChessPiece piece)
     {
-        if (piece.isWhite != isWhiteTurn)
+        if (piece.isWhite != this.isWhiteTurn)
         {
             print("wrong colour piece");
             return;
@@ -92,7 +100,12 @@ public class ChessBoard : MonoBehaviour
     {
         if (allowedMoves[tile.X-1, tile.Y-1])
         {
-
+            //halfmoves
+            HalfmoveClock++;
+            if(piece.GetType().ToString() == "Pawn")
+            {
+                HalfmoveClock = 0;
+            }
             //remove piece if needed
             ChessPiece capturePiece = ChessPieces[tile.X-1, tile.Y-1];
             if (capturePiece != null && capturePiece.isWhite != isWhiteTurn)
@@ -103,16 +116,27 @@ public class ChessBoard : MonoBehaviour
                 }
                 activePieces.Remove(capturePiece.gameObject);
                 Destroy(capturePiece.gameObject);
+                HalfmoveClock = 0;
             }
 
+            //update if its EnPassant
+            if ((piece.GetType().ToString() == "Pawn") && ((piece.CurrentY == 1 && tile.Y == 4) || (piece.CurrentY == 6 && tile.Y == 5)))
+            {
+                print("setTure");
+                justEnPassant = true;
+                if(isWhiteTurn)
+                enPassantTargetSquare = Tiles[tile.X - 1, tile.Y - 2];
+                else
+                enPassantTargetSquare = Tiles[tile.X - 1, tile.Y];
+            }
+            else
+                justEnPassant = false;
 
             //transforming the pieces position
             Vector3 pos = piece.transform.position;
             pos.x = tile.transform.position.x - 1;
             pos.z = tile.transform.position.z + 1;
             piece.transform.position = pos;
-
-
 
             //Update pieces array
             ChessPieces[tile.X - 1, tile.Y - 1] = piece;
@@ -126,7 +150,11 @@ public class ChessBoard : MonoBehaviour
             SelectedChessPiece = null;
             SelectedTile = null;
             if (isWhiteTurn)
+            {
                 isWhiteTurn = false;
+                StartCoroutine(get_AI_Move(generate_AI_url()));
+                FullMoveCounter++;
+            }
             else
                 isWhiteTurn = true;
 
@@ -135,7 +163,8 @@ public class ChessBoard : MonoBehaviour
 
             //turn off the highlight
             HighlightAllowedMoves(piece);
-        }
+
+            }
     }
 
     private void initializePieces()
@@ -144,11 +173,11 @@ public class ChessBoard : MonoBehaviour
         ChessPieces = new ChessPiece[8, 8];
 
         //spawn king
-        SpawnChessPiece(0, 3, 0);
+        SpawnChessPiece(0, 4, 0);
         SpawnChessPiece(6, 4, 7);
 
         //spawn queen
-        SpawnChessPiece(1, 4, 0);
+        SpawnChessPiece(1, 3, 0);
         SpawnChessPiece(7, 3, 7);
 
         //spawn rook1
@@ -242,6 +271,121 @@ public class ChessBoard : MonoBehaviour
         ChessPieces[letter, number].SetPosition(letter, number);
         activePieces.Add(go);
 
+    }
+
+    private string generate_AI_url()
+    {
+        string url = "https://www.chessdb.cn/cdb.php?action=querybest&board=";
+        int emptyLine;
+        for (int j = 7; j >=0 ; j--)
+        {
+            emptyLine = 0;
+            for (int i = 0; i < 8; i++)
+            {
+                //if its an empty square
+                if (ChessPieces[i, j] == null)
+                {
+                    emptyLine++;
+                }
+                //if its a piece
+                else
+                {
+                    //if its the end of a line of blank squares (and not the first square)
+                    if (i != 0)
+                    {
+                        if (ChessPieces[i - 1, j] == null)
+                        {
+                            url += emptyLine.ToString();
+                            emptyLine = 0;
+                        }
+                    }
+                    if (ChessPieces[i, j].GetType().ToString() == "Rook")
+                        if (ChessPieces[i, j].isWhite)
+                            url += "R";
+                        else url += "r";
+
+                    else if (ChessPieces[i, j].GetType().ToString() == "Knight")
+                        if (ChessPieces[i, j].isWhite)
+                            url += "N";
+                        else url += "n";
+
+                    else if (ChessPieces[i, j].GetType().ToString() == "Bishop")
+                        if (ChessPieces[i, j].isWhite)
+                            url += "B";
+                        else url += "b";
+                    else if (ChessPieces[i, j].GetType().ToString() == "King")
+                        if (ChessPieces[i, j].isWhite)
+                            url += "K";
+                        else url += "k";
+
+                    else if (ChessPieces[i, j].GetType().ToString() == "Queen")
+                        if (ChessPieces[i, j].isWhite)
+                            url += "Q";
+                        else url += "q";
+
+                    else if (ChessPieces[i, j].GetType().ToString() == "Pawn")
+                        if (ChessPieces[i, j].isWhite)
+                            url += "P";
+                        else url += "p";
+                }
+                if (i == 7 && emptyLine != 0)
+                {
+                    url += emptyLine.ToString();
+                }
+            }
+            url += "/";
+        }
+        if (justEnPassant)
+        {
+            string enPassant = "";
+            print(enPassantTargetSquare.name);
+            int x = (enPassantTargetSquare.X + 96);
+            enPassant += System.Convert.ToChar(x);
+
+            int c = (int)enPassantTargetSquare.Y;
+            enPassant += c.ToString();
+
+            url += "%20b%20KQkq%20" + enPassant + "%20" + HalfmoveClock.ToString() + "%20" + FullMoveCounter.ToString();
+        }
+        else { 
+        url += "%20b%20KQkq%20-%20" + HalfmoveClock.ToString() + "%20" + FullMoveCounter.ToString();
+        }
+        print(url);
+        return url;
+    }
+
+    private IEnumerator get_AI_Move(string url)
+    {
+        var moveRequest = new UnityWebRequest(url)
+        {
+            downloadHandler = new DownloadHandlerBuffer()
+        };
+        yield return moveRequest.SendWebRequest();
+
+        if (moveRequest.isNetworkError || moveRequest.isHttpError)
+        {
+            Debug.Log(moveRequest.error);
+            yield break;
+        }
+
+        string output = moveRequest.downloadHandler.text;
+        print(output);
+        AImove(output);
+    }
+
+    private void AImove(string move)
+    {
+        int startX = (int)move[5] - 97;
+        int startY = (int)move[6] - 49;
+        ChessPiece c = ChessPieces[startX, startY];
+        SelectChessPiece(c);
+
+        int endX = (int)move[7] - 97;
+        int endY = (int)move[8] - 49;
+        Tile t = Tiles[endX, endY];
+        SelectDestinationTile(t);
+
+        MovePiece(c, t);
     }
 
 }

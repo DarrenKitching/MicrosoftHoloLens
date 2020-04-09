@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Bishop : ChessPiece
 {
+    public Bishop()
+    {
+    }
     public override bool[,] PossibleMoves()
     {
         bool[,] r = new bool[8, 8];

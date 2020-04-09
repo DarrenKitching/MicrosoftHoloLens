@@ -4,33 +4,8 @@ using UnityEngine;
 
 public class ChangePos : MonoBehaviour
 {
-    public static GameObject lastTouch = null;
     public ChessPiece currentChessPiece = null;
     public Tile destinationTile = null;
-
-    public void Change()
-    {
-        print("Change Function");
-        if (lastTouch != null && gameObject.name.Length == 2)
-        {
-            print("move");
-            print("Coords of last piece are " + lastTouch.transform.position);
-            Vector3 temp = gameObject.transform.position;
-            temp.y += (float)1.024;
-
-            lastTouch.transform.position = temp;
-            print("New coords of last touch " + lastTouch.transform.position);
-            lastTouch = null;
-        }
-        else
-        {
-            if (lastTouch != null)
-            {
-                print(lastTouch.name);
-            }
-            print("null");
-        }
-    }
 
     public void Move()
     {

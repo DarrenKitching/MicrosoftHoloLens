@@ -43,8 +43,8 @@ The Tower of Hanoi game has varying levels of difficulty. The user can play with
 <h2>Run in Emulator</h2>
 <p>Clone the GitHub repository locally</p>
 <p>Download and install Unity Hub at https://unity3d.com/get-unity/download</p>
-<p>Launch Unity Hub and add the folder MicrosoftHoloLens/HoloLens as a new Project</p>
-<p>Use Unity Hub to install Unity version 2019.3 and run the Project with that version</p>
+<p>Launch Unity Hub and add the folder MicrosoftHoloLens as a new Project</p>
+<p>Use Unity Hub to install Unity version 2019.2 and run the Project with that version</p>
 <p>Press the play scene button in the Unity emulator</p>
 <h2>Build for HoloLens device</h2>
 <p>Open the Project in Unity (see above steps)</p>

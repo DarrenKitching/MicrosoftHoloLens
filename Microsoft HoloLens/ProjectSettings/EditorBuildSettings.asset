@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Chess.unity
+    path: Assets/Scenes/Chess.unity
     guid: 84467158125f7064d8e6737bd368e8ce
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 904966efe307ee847b021533c19d07bd
+  - enabled: 1
+    path: Assets/Scenes/Jenga.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Tower of Hanoi.unity
+    guid: cc4a4f11a0c9f974caf8a7afa934b435
   m_configObjects: {}

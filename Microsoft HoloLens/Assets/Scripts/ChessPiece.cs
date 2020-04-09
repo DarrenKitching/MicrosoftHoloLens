@@ -4,6 +4,7 @@ using UnityEngine;
 
 public abstract class ChessPiece : MonoBehaviour
 {
+    public static ChessPiece Instance { set; get; }
     public int CurrentX { set; get; }
     public int CurrentY { set; get; }
     public bool isWhite;

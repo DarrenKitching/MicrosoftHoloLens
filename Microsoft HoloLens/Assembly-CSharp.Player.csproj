@@ -293,6 +293,9 @@
     <Reference Include="Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors">
       <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Editor.ServiceInspectors.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Timeline.Editor">
+      <HintPath>Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy">
       <HintPath>Library/ScriptAssemblies/Microsoft.MixedReality.Toolkit.Editor.BuildAndDeploy.dll</HintPath>
     </Reference>
@@ -361,6 +364,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT.Editor">
+      <HintPath>Library/ScriptAssemblies/Microsoft.Windows.MixedReality.DotNetWinRT.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Windows.MixedReality.DotNetWinRT">
       <HintPath>Assets/MixedRealityToolkit.Providers/WindowsMixedReality/DotNetAdapter/Plugins/net46/Microsoft.Windows.MixedReality.DotNetWinRT.dll</HintPath>
@@ -1252,11 +1258,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DragObject.cs" />
+    <Compile Include="Assets\FiveDiscSpawn.cs" />
+    <Compile Include="Assets\GameManager.cs" />
+    <Compile Include="Assets\GameRules.cs" />
+    <Compile Include="Assets\Scenes\onclickDestory.cs" />
+    <Compile Include="Assets\Scenes\reset.cs" />
     <Compile Include="Assets\Scripts\ChangePos.cs" />
+    <Compile Include="Assets\Scripts\Chess_AI.cs" />
     <Compile Include="Assets\Scripts\ChessBoard.cs" />
     <Compile Include="Assets\Scripts\ChessBoard1.cs" />
     <Compile Include="Assets\Scripts\ChessPiece.cs" />
-    <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+    <Compile Include="Assets\Scripts\LoadScene.cs" />
     <Compile Include="Assets\Scripts\Pieces\Bishop.cs" />
     <Compile Include="Assets\Scripts\Pieces\King.cs" />
     <Compile Include="Assets\Scripts\Pieces\Knight.cs" />
@@ -1264,7 +1277,9 @@
     <Compile Include="Assets\Scripts\Pieces\Queen.cs" />
     <Compile Include="Assets\Scripts\Pieces\Rook.cs" />
     <Compile Include="Assets\Scripts\Restart.cs" />
+    <Compile Include="Assets\Scripts\ReturnToMenu.cs" />
     <Compile Include="Assets\Scripts\Tile.cs" />
+    <Compile Include="Assets\SevenDiskSpawn.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -1298,6 +1313,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeB.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
+    <Compile Include="Assets\ThreeDiscSpawn.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

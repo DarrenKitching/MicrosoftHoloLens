@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Pawn : ChessPiece
 {
+    public Pawn()
+    {
+
+    }
     public override bool [,] PossibleMoves ()
     {
         ChessPiece c, c2;
@@ -61,7 +65,7 @@ public class Pawn : ChessPiece
             {
                 c = ChessBoard.Instance.ChessPieces[CurrentX + 1, CurrentY -1];
                 if (c != null && c.isWhite)
-                    r[CurrentX + 1, CurrentY + 1] = true;
+                    r[CurrentX + 1, CurrentY - 1] = true;
             }
 
             //Middle

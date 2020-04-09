@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Knight : ChessPiece
 {
+    public Knight()
+    {
+
+    }
     public override bool[,] PossibleMoves ()
     {
         bool[,] r = new bool[8, 8];
