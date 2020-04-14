@@ -275,7 +275,7 @@ public class ChessBoard : MonoBehaviour
 
     private string generate_AI_url()
     {
-        string url = "https://www.chessdb.cn/cdb.php?action=querybest&board=";
+        string url = "https://www.chessdb.cn/cdb.php?action=queryall&board=";
         int emptyLine;
         for (int j = 7; j >=0 ; j--)
         {
@@ -335,6 +335,8 @@ public class ChessBoard : MonoBehaviour
             }
             url += "/";
         }
+        url = url.Substring(0, url.Length - 1);
+
         if (justEnPassant)
         {
             string enPassant = "";
@@ -375,17 +377,25 @@ public class ChessBoard : MonoBehaviour
 
     private void AImove(string move)
     {
+        if (move[0] == (char)117)
+        {
+            print("unknown move");
+            StartCoroutine(get_AI_Move(generate_AI_url()));
+        }
         int startX = (int)move[5] - 97;
         int startY = (int)move[6] - 49;
-        ChessPiece c = ChessPieces[startX, startY];
-        SelectChessPiece(c);
+        if (startX >= 0 && startX < 8 && startY >= 0 && startY < 8)
+        {
+            ChessPiece c = ChessPieces[startX, startY];
+            SelectChessPiece(c);
 
-        int endX = (int)move[7] - 97;
-        int endY = (int)move[8] - 49;
-        Tile t = Tiles[endX, endY];
-        SelectDestinationTile(t);
+            int endX = (int)move[7] - 97;
+            int endY = (int)move[8] - 49;
+            Tile t = Tiles[endX, endY];
+            SelectDestinationTile(t);
 
-        MovePiece(c, t);
+            MovePiece(c, t);
+        }
     }
 
 }
