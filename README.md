@@ -1,5 +1,8 @@
 # Microsoft HoloLens
-This was an assignment to create an application for the Microsoft HoloLens device that provides an augmented reality experience by utilizing the features made available by the Mixed Reality Toolkit. 
+This was an assignment to create an application for the Microsoft HoloLens device that provides an augmented reality experience by utilizing the features made available by the Mixed Reality Toolkit.
+
+Video demonstration of final product: 
+https://www.youtube.com/watch?v=H1gYBTjqsh8&feature=youtu.be&fbclid=IwAR3N_tryUGBW-XuQPnYHn0E4bikpuy-YAByx3B_SaT1HvPjev7ejp9BWJMw
 
 <h1>Overview</h1>
 <p>
